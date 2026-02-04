@@ -1,4 +1,5 @@
 .claude/workflows/
 __pycache__/
 *.pyc
-.env
+.envtest.db
+*.egg-info/
