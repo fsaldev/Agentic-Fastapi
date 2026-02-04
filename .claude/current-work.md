@@ -7,20 +7,19 @@
 - **Updated**: 2026-02-04
 
 ## Status
-ACA-757 (Customer CRUD operations) completed and merged.
+ACA-758 (Create booking/reservation) completed and merged.
 
 ## Recent Changes
-- Verified Customer CRUD implementation (model, schemas, repository, service, endpoints)
-- Added test suite (15 tests) for Customer CRUD endpoints
-- PR #3 merged to master
+- Verified Create Booking endpoint and all validations
+- Added test suite (9 tests) for POST /api/v1/bookings
+- PR merged to master
 
 ## Files Modified
-- tests/test_customers.py
-- .claude/current-work.md
+- tests/test_bookings.py (new)
 
 ## Next Steps
 - Pick up next issue from backlog
 
 ## Notes
-- All Customer CRUD acceptance criteria verified with tests
-- Full suite: 34 tests passing (19 car + 15 customer)
+- All Create Booking acceptance criteria verified with tests
+- Full suite: 43 tests passing (19 car + 15 customer + 9 booking)
