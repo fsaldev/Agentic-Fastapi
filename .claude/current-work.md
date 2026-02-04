@@ -7,19 +7,20 @@
 - **Updated**: 2026-02-04
 
 ## Status
-ACA-758 (Create booking/reservation) completed and merged.
+ACA-759, ACA-760, ACA-761 (booking lifecycle: availability, pickup, return) completed and merged.
 
 ## Recent Changes
-- Verified Create Booking endpoint and all validations
-- Added test suite (9 tests) for POST /api/v1/bookings
+- Added 4 tests for car availability check (ACA-759)
+- Added 3 tests for pickup car (ACA-760)
+- Added 3 tests for return car (ACA-761)
 - PR merged to master
 
 ## Files Modified
-- tests/test_bookings.py (new)
+- tests/test_bookings.py
 
 ## Next Steps
 - Pick up next issue from backlog
 
 ## Notes
-- All Create Booking acceptance criteria verified with tests
-- Full suite: 43 tests passing (19 car + 15 customer + 9 booking)
+- All booking lifecycle acceptance criteria verified with tests
+- Full suite: 53 tests passing (19 car + 15 customer + 19 booking)
