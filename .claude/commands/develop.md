@@ -75,3 +75,4 @@ Implement a feature from a Linear issue. Fetches requirements, plans, and implem
 - Don't over-engineer - implement exactly what's needed
 - If something is unclear, check the Linear issue again
 - Commit frequently with clear messages
+- The agent should strictly limit its work to what is explicitly stated in the ticket and must not perform any tasks outside the scope of the issue.

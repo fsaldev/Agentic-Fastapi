@@ -43,6 +43,7 @@ Execute each phase in sequence. If a phase fails, follow the retry/stop rules be
 - **Linear Comment**: Post review summary with any issues found
 
 #### 4. DEPLOY
+- Update `.claude/current-work.md` to reflect completion (set Active Issue to "None", status to idle, summarize recent changes)
 - Commit changes with conventional commit message
 - Push branch to remote
 - Create pull request

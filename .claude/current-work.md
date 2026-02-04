@@ -1,26 +1,26 @@
 # Current Work
 
 ## Active Issue
-- **Issue**: ACA-757
-- **Title**: Customer CRUD operations
-- **Branch**: feat-aca-757-customer-crud
-- **Started**: 2026-02-04
+- **Issue**: None
+- **Title**: Idle
+- **Branch**: master
+- **Updated**: 2026-02-04
 
 ## Status
-Implementation complete. Running tests.
+ACA-757 (Customer CRUD operations) completed and merged.
 
 ## Recent Changes
-- Verified existing Customer model, schemas, repository, service, and API endpoints
-- Created tests/test_customers.py with 15 tests covering all CRUD endpoints
+- Verified Customer CRUD implementation (model, schemas, repository, service, endpoints)
+- Added test suite (15 tests) for Customer CRUD endpoints
+- PR #3 merged to master
 
 ## Files Modified
-- tests/test_customers.py (new)
+- tests/test_customers.py
+- .claude/current-work.md
 
 ## Next Steps
-- Run tests and fix any issues
-- Review against acceptance criteria
-- Deploy (commit, push, PR, merge)
+- Pick up next issue from backlog
 
 ## Notes
-- Customer CRUD code was already scaffolded — only tests were missing
-- Following same test patterns as test_cars.py
+- All Customer CRUD acceptance criteria verified with tests
+- Full suite: 34 tests passing (19 car + 15 customer)

@@ -17,6 +17,7 @@ This file tracks what's currently being worked on. Update it:
 - **During development** - Update status, recent changes, and files modified
 - **When completing work** - Clear the active issue or note completion
 - **When switching tasks** - Update to reflect the new work
+- **Before committing and creating a PR** -     Ensure .claude/current-work.md is fully up to date and accurately reflects the completed work
 
 ### What to Update
 
