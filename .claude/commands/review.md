@@ -1,8 +1,8 @@
 # Review
 
-> **Internal phase — called by `/run`. Do not invoke directly.**
-
 Review implementation against the Linear issue requirements.
+
+Can be run standalone (`/review ACA-123`) or as part of the `/run` pipeline.
 
 ## Variables
 
@@ -91,5 +91,5 @@ Return ONLY valid JSON:
 - Be thorough but practical
 - Focus on functionality, not style preferences
 - Only flag real issues, not nitpicks
-- Post Linear comment before returning JSON
+- Post Linear comment before returning JSON (only if issue_id provided)
 - Output ONLY the JSON, no other text

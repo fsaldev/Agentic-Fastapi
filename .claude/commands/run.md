@@ -2,7 +2,9 @@
 
 Automatically develop, test, review, and deploy a feature with no manual intervention.
 
-**This is the standard entry point for all implementation work.** It orchestrates the full SDLC by calling each phase command in sequence: develop → test → review → deploy.
+Orchestrates the full SDLC by calling each phase command in sequence: develop → test → review → deploy.
+
+Each phase (`/develop`, `/test`, `/review`) can also be run independently. Use `/run` when you want the full automated pipeline.
 
 ## Variables
 

@@ -1,8 +1,8 @@
 # Test
 
-> **Internal phase — called by `/run`. Do not invoke directly.**
-
 Run the application test suite and return structured results.
+
+Can be run standalone (`/test ACA-123`) or as part of the `/run` pipeline.
 
 ## Variables
 
@@ -12,7 +12,7 @@ Run the application test suite and return structured results.
 
 1. Execute each test in sequence
 2. Collect all results
-3. Post results to Linear (if issue_id provided)
+3. If `issue_id` is provided and looks like a Linear issue ID, post results to Linear
 4. Return JSON results
 
 ## Test Sequence
@@ -87,5 +87,5 @@ Return ONLY valid JSON array:
 - Sort results with failures first
 - Include exact command in `execution_command`
 - Truncate errors to 500 chars max
-- Post Linear comment before returning JSON
+- Post Linear comment before returning JSON (only if issue_id provided)
 - Output ONLY the JSON array, no other text
