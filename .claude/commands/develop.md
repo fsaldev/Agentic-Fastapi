@@ -1,12 +1,12 @@
 # Develop
 
-> **Internal phase — called by `/run`. Do not invoke directly.**
-
 Implement a feature from a Linear issue. Fetches requirements, plans, and implements.
+
+Can be run standalone (`/develop ACA-123`) or as part of the `/run` pipeline.
 
 ## Variables
 
-- `issue_id`: $1 - Linear issue ID (e.g., "ACA-123")
+- `issue_id`: $1 - Linear issue ID (e.g., "ACA-123") or feature description
 
 ## Instructions
 
@@ -68,6 +68,9 @@ Implement a feature from a Linear issue. Fetches requirements, plans, and implem
    ### Summary
    {what was implemented}
    ```
+
+### 8. **Update Tracking** (standalone only — skip if called from `/run`)
+   - Update `.claude/current-work.md` with recent changes and files modified
 
 ## Guidelines
 
