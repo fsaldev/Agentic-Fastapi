@@ -7,18 +7,22 @@
 - **Updated**: 2026-02-09
 
 ## Status
-ACA-776 (Core UI Components Library) completed and merged.
+ACA-777 (API Client & Data Fetching Layer) completed and merged.
 
 ## Recent Changes
-- Installed 14 shadcn/ui components (select, textarea, label, dialog, alert-dialog, tabs, separator, skeleton, badge, alert, popover, dropdown-menu, table, sonner, form)
-- Created 5 custom shared components (StatusBadge, LoadingSpinner, EmptyState, PageHeader, DataTable)
-- Configured Toast notification system (Sonner) app-wide in layout
-- Added dependencies: @tanstack/react-table, react-hook-form, @hookform/resolvers, zod, date-fns, sonner, Radix UI primitives
+- Created typed API client with error handling (lib/api/client.ts)
+- Created SWR provider with default configuration
+- Created TypeScript types for Car, Customer, Booking matching backend schemas
+- Created SWR hooks: useCars, useCar, useCarAvailability, useCarMutations
+- Created SWR hooks: useCustomers, useCustomer, useCustomerMutations
+- Created SWR hooks: useBookings, useBooking, useBookingMutations
+- Added SWR dependency and provider to app layout
 
 ## Files Modified
-- frontend/src/components/ui/ (14 new component files)
-- frontend/src/components/shared/ (5 new component files)
-- frontend/src/app/layout.tsx (Toaster provider, metadata)
+- frontend/src/types/ (4 new type files)
+- frontend/src/lib/api/ (2 new files: client, swr-provider)
+- frontend/src/lib/hooks/ (3 new hook files)
+- frontend/src/app/layout.tsx (SWR provider)
 - frontend/package.json, frontend/package-lock.json
 
 ## Next Steps
